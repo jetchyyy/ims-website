@@ -4,7 +4,6 @@ import { Menu, X } from 'lucide-react';
 import { Navigation } from './Navigation';
 import { MobileMenu } from './MobileMenu';
 import { Button } from '@/components/common';
-import { COMPANY_NAME } from '@/utils/constants';
 
 export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -21,19 +20,31 @@ export const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 z-50 w-full transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-md' : 'bg-white/95 backdrop-blur-sm'
-      }`}
+      className={`fixed top-0 z-50 w-full transition-all duration-300 ${isScrolled ? 'bg-white shadow-md' : 'bg-white/95 backdrop-blur-sm'
+        }`}
     >
       <div className="container-custom">
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary-600">
-              <span className="text-xl font-bold text-white">IMS</span>
+          {/* Logo */}
+          <Link to="/" className="flex items-center gap-2">
+            <span className="font-heading text-3xl font-black tracking-tight text-primary-700">
+              IMS
+            </span>
+            <div className="hidden flex-col sm:flex">
+              <span className="text-[10px] font-bold uppercase leading-none tracking-wider text-gray-900">
+                International
+              </span>
+              <span className="text-[10px] font-bold uppercase leading-none tracking-wider text-gray-900">
+                Marketing
+              </span>
+              <span className="text-[10px] font-bold uppercase leading-none tracking-wider text-gray-900">
+                Services
+              </span>
             </div>
-            <span className="hidden text-xl font-bold text-gray-900 sm:block">
-              {COMPANY_NAME}
+            {/* Mobile simplified text */}
+            <span className="text-xs font-bold leading-tight text-gray-900 sm:hidden max-w-[100px]">
+              International Marketing Services
             </span>
           </Link>
 

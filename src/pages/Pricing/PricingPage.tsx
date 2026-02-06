@@ -29,7 +29,7 @@ export const PricingPage = () => {
       </section>
 
       {/* Pricing Section */}
-      <Pricing />
+      <Pricing showTitle={false} />
 
       {/* Publicist Service */}
       <section className="section bg-white">

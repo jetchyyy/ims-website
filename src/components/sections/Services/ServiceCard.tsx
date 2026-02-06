@@ -50,7 +50,6 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({ service, index }) => {
 
           {/* Learn More Link */}
           <button className="mt-6 text-sm font-medium text-primary-600 transition-colors hover:text-primary-700">
-            Learn More →
           </button>
         </div>
       </Card>

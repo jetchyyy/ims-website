@@ -144,6 +144,7 @@ export const websitePackages: WebsitePackage[] = [
   {
     id: 'web-portfolio',
     name: 'Portfolio Websites',
+    category: PricingCategory.WEBSITE,
     price: 1599,
     coverage: 'Showcase work or skills',
     features: [
@@ -163,6 +164,7 @@ export const websitePackages: WebsitePackage[] = [
   {
     id: 'web-personal',
     name: 'Personal Websites',
+    category: PricingCategory.WEBSITE,
     price: 1699,
     coverage: 'About an individual',
     features: [
@@ -182,6 +184,7 @@ export const websitePackages: WebsitePackage[] = [
   {
     id: 'web-business',
     name: 'Business / Corporate Websites',
+    category: PricingCategory.WEBSITE,
     price: 2499,
     coverage: 'Represent a company or brand',
     features: [
@@ -202,6 +205,7 @@ export const websitePackages: WebsitePackage[] = [
   {
     id: 'web-ecommerce',
     name: 'E-commerce Websites',
+    category: PricingCategory.WEBSITE,
     price: 2499,
     coverage: 'Sell products or services online',
     features: [

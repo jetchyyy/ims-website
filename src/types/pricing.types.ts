@@ -27,6 +27,7 @@ export enum PackageTier {
 export interface WebsitePackage {
   id: string;
   name: string;
+  category: PricingCategory;
   price: number;
   coverage: string;
   features: string[];

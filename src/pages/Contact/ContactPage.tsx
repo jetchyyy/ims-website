@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion';
+import { Landmark, Globe } from 'lucide-react';
 import { Contact } from '@/components/sections/Contact';
 import { Card } from '../../components/common/Card';
-import { paymentInfo } from '@/data/contact';
+import { paymentInfo, contactInfo } from '@/data/contact';
 
 export const ContactPage = () => {
   return (
@@ -42,59 +43,73 @@ export const ContactPage = () => {
 
             <div className="grid gap-8 lg:grid-cols-2">
               {/* Local Bank Info */}
-              <Card>
-                <h3 className="mb-4 text-xl font-semibold text-gray-900">
-                  {paymentInfo.localBank.title}
-                </h3>
-                <div className="space-y-3 text-sm">
-                  <div>
-                    <span className="font-medium text-gray-700">Account Holder:</span>
-                    <p className="text-gray-600">{paymentInfo.localBank.accountHolder}</p>
-                    <p className="text-gray-600">{paymentInfo.localBank.accountHolderWise}</p>
+              <Card padding="md">
+                <div className="flex items-start space-x-4">
+                  <div className="rounded-lg bg-primary-100 p-3">
+                    <Landmark className="h-6 w-6 text-primary-600" />
                   </div>
-                  <div>
-                    <span className="font-medium text-gray-700">ACH and Wire Routing Number:</span>
-                    <p className="font-mono text-gray-900">{paymentInfo.localBank.routingNumber}</p>
-                  </div>
-                  <div>
-                    <span className="font-medium text-gray-700">Account Number:</span>
-                    <p className="font-mono text-gray-900">{paymentInfo.localBank.accountNumber}</p>
-                  </div>
-                  <div>
-                    <span className="font-medium text-gray-700">Account Type:</span>
-                    <p className="text-gray-600">{paymentInfo.localBank.accountType}</p>
-                  </div>
-                  <div>
-                    <span className="font-medium text-gray-700">Bank Name and Address:</span>
-                    <p className="text-gray-600">{paymentInfo.localBank.bankName}</p>
-                    <p className="text-gray-600">{paymentInfo.localBank.bankAddress}</p>
+                  <div className="flex-1">
+                    <h3 className="mb-4 text-lg font-bold text-gray-900">
+                      {paymentInfo.localBank.title}
+                    </h3>
+                    <div className="space-y-3 text-sm">
+                      <div>
+                        <span className="font-medium text-gray-700">Account Holder:</span>
+                        <p className="text-gray-600">{paymentInfo.localBank.accountHolder}</p>
+                        <p className="text-gray-600">{paymentInfo.localBank.accountHolderWise}</p>
+                      </div>
+                      <div>
+                        <span className="font-medium text-gray-700">ACH and Wire Routing Number:</span>
+                        <p className="font-mono text-gray-900">{paymentInfo.localBank.routingNumber}</p>
+                      </div>
+                      <div>
+                        <span className="font-medium text-gray-700">Account Number:</span>
+                        <p className="font-mono text-gray-900">{paymentInfo.localBank.accountNumber}</p>
+                      </div>
+                      <div>
+                        <span className="font-medium text-gray-700">Account Type:</span>
+                        <p className="text-gray-600">{paymentInfo.localBank.accountType}</p>
+                      </div>
+                      <div>
+                        <span className="font-medium text-gray-700">Bank Name and Address:</span>
+                        <p className="text-gray-600">{paymentInfo.localBank.bankName}</p>
+                        <p className="text-gray-600">{paymentInfo.localBank.bankAddress}</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </Card>
 
               {/* International Bank Info */}
-              <Card>
-                <h3 className="mb-4 text-xl font-semibold text-gray-900">
-                  {paymentInfo.internationalBank.title}
-                </h3>
-                <div className="space-y-3 text-sm">
-                  <div>
-                    <span className="font-medium text-gray-700">Account Holder:</span>
-                    <p className="text-gray-600">{paymentInfo.internationalBank.accountHolder}</p>
-                    <p className="text-gray-600">{paymentInfo.internationalBank.accountHolderWise}</p>
+              <Card padding="md">
+                <div className="flex items-start space-x-4">
+                  <div className="rounded-lg bg-primary-100 p-3">
+                    <Globe className="h-6 w-6 text-primary-600" />
                   </div>
-                  <div>
-                    <span className="font-medium text-gray-700">SWIFT/BIC:</span>
-                    <p className="font-mono text-gray-900">{paymentInfo.internationalBank.swiftBIC}</p>
-                  </div>
-                  <div>
-                    <span className="font-medium text-gray-700">Account Number:</span>
-                    <p className="font-mono text-gray-900">{paymentInfo.internationalBank.accountNumber}</p>
-                  </div>
-                  <div>
-                    <span className="font-medium text-gray-700">Bank Name and Address:</span>
-                    <p className="text-gray-600">{paymentInfo.internationalBank.bankName}</p>
-                    <p className="text-gray-600">{paymentInfo.internationalBank.bankAddress}</p>
+                  <div className="flex-1">
+                    <h3 className="mb-4 text-lg font-bold text-gray-900">
+                      {paymentInfo.internationalBank.title}
+                    </h3>
+                    <div className="space-y-3 text-sm">
+                      <div>
+                        <span className="font-medium text-gray-700">Account Holder:</span>
+                        <p className="text-gray-600">{paymentInfo.internationalBank.accountHolder}</p>
+                        <p className="text-gray-600">{paymentInfo.internationalBank.accountHolderWise}</p>
+                      </div>
+                      <div>
+                        <span className="font-medium text-gray-700">SWIFT/BIC:</span>
+                        <p className="font-mono text-gray-900">{paymentInfo.internationalBank.swiftBIC}</p>
+                      </div>
+                      <div>
+                        <span className="font-medium text-gray-700">Account Number:</span>
+                        <p className="font-mono text-gray-900">{paymentInfo.internationalBank.accountNumber}</p>
+                      </div>
+                      <div>
+                        <span className="font-medium text-gray-700">Bank Name and Address:</span>
+                        <p className="text-gray-600">{paymentInfo.internationalBank.bankName}</p>
+                        <p className="text-gray-600">{paymentInfo.internationalBank.bankAddress}</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </Card>
@@ -113,13 +128,20 @@ export const ContactPage = () => {
             viewport={{ once: true }}
           >
             <h2 className="mb-8 text-center text-3xl font-bold text-gray-900">Find Us</h2>
-            <div className="overflow-hidden rounded-xl bg-gray-200">
-              {/* You can integrate Google Maps here */}
-              <div className="flex h-96 items-center justify-center">
-                <p className="text-gray-500">
-                  206 S Magnolia Ave unit f, Ocala, FL 34471
-                </p>
-              </div>
+            <div className="overflow-hidden rounded-xl bg-gray-200 h-96">
+              <iframe
+                width="100%"
+                height="100%"
+                id="gmap_canvas"
+                src={`https://maps.google.com/maps?q=${encodeURIComponent(
+                  contactInfo.address.full
+                )}&t=&z=15&ie=UTF8&iwloc=&output=embed`}
+                frameBorder="0"
+                scrolling="no"
+                marginHeight={0}
+                marginWidth={0}
+                title="Google Map"
+              />
             </div>
           </motion.div>
         </div>

@@ -14,19 +14,18 @@ export const PricingToggle: React.FC<PricingToggleProps> = ({ activeTab, onTabCh
 
   return (
     <div className="mb-12 flex justify-center">
-      <div className="inline-flex rounded-lg bg-gray-100 p-1">
+      <div className="inline-flex rounded-lg bg-primary-800/50 p-1 backdrop-blur-sm">
         {tabs.map((tab) => (
           <button
             key={tab.id}
             onClick={() => onTabChange(tab.id)}
-            className={`relative px-6 py-3 text-sm font-medium transition-colors ${
-              activeTab === tab.id ? 'text-white' : 'text-gray-700 hover:text-gray-900'
-            }`}
+            className={`relative px-6 py-3 text-sm font-medium transition-colors ${activeTab === tab.id ? 'text-white' : 'text-primary-200 hover:text-white'
+              }`}
           >
             {activeTab === tab.id && (
               <motion.div
                 layoutId="activeTab"
-                className="absolute inset-0 rounded-md bg-primary-600"
+                className="absolute inset-0 rounded-md bg-primary-500"
                 transition={{ type: 'spring', bounce: 0.2, duration: 0.6 }}
               />
             )}

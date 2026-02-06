@@ -12,11 +12,21 @@ export const Footer = () => {
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           {/* Company Info */}
           <div>
-            <div className="mb-4 flex items-center space-x-2">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary-600">
-                <span className="text-xl font-bold text-white">IMS</span>
+            <div className="mb-4 flex items-center gap-2">
+              <span className="font-heading text-3xl font-black tracking-tight text-white">
+                IMS
+              </span>
+              <div className="flex flex-col">
+                <span className="text-[10px] font-bold uppercase leading-none tracking-wider text-gray-400">
+                  International
+                </span>
+                <span className="text-[10px] font-bold uppercase leading-none tracking-wider text-gray-400">
+                  Marketing
+                </span>
+                <span className="text-[10px] font-bold uppercase leading-none tracking-wider text-gray-400">
+                  Services
+                </span>
               </div>
-              <span className="text-lg font-bold text-white">{COMPANY_NAME}</span>
             </div>
             <p className="text-sm text-gray-400">
               Transform your brand with professional marketing solutions tailored to your success.
