@@ -13,7 +13,7 @@ export const contactInfo: ContactInfo = {
     zip: '34471',
     full: '206 S Magnolia Ave unit f, Ocala, FL 34471',
   },
-  email: 'info@imsmarketing.com', // Add actual email if available
+  email: 'vagraceteam@gmail.com', // Add actual email if available
   hours: {
     monday: '9:00 AM - 5:00 PM',
     tuesday: '9:00 AM - 5:00 PM',
