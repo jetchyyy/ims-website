@@ -138,9 +138,12 @@ export const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-12 border-t border-gray-800 pt-8 text-center text-sm">
-          <p>
+        <div className="mt-12 border-t border-gray-800 pt-8 text-center text-sm text-gray-400">
+          <p className="mb-2">
             © {currentYear} {COMPANY_NAME}. All rights reserved.
+          </p>
+          <p className="text-xs">
+            Created by <span className="text-primary-400 hover:text-primary-300">Odyssey</span>
           </p>
         </div>
       </div>
