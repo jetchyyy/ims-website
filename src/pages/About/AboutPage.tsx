@@ -1,8 +1,16 @@
 import { motion } from 'framer-motion';
 import { Target, Users, Award, Zap } from 'lucide-react';
 import { Card } from '../../components/common/Card';
+import { useSEO } from '@/hooks/useSEO';
 
 export const AboutPage = () => {
+  useSEO({
+    title: 'About',
+    description:
+      'Learn about International Marketing Services, our mission, values, and experience helping brands scale with confidence.',
+    path: '/about',
+  });
+
   const values = [
     {
       icon: Target,

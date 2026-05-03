@@ -3,8 +3,16 @@ import { ServiceCard } from '@/components/sections/Services';
 import { services } from '@/data/services';
 import { Button } from '../../components/common/Button';
 import { Link } from 'react-router-dom';
+import { useSEO } from '@/hooks/useSEO';
 
 export const ServicesPage = () => {
+  useSEO({
+    title: 'Services',
+    description:
+      'Explore publication, web development, and digital marketing services tailored to accelerate your business growth.',
+    path: '/services',
+  });
+
   return (
     <div className="pt-20">
       {/* Hero Section */}

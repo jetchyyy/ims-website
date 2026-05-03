@@ -3,8 +3,16 @@ import { Landmark, Globe } from 'lucide-react';
 import { Contact } from '@/components/sections/Contact';
 import { Card } from '../../components/common/Card';
 import { paymentInfo, contactInfo } from '@/data/contact';
+import { useSEO } from '@/hooks/useSEO';
 
 export const ContactPage = () => {
+  useSEO({
+    title: 'Contact',
+    description:
+      'Contact International Marketing Services to discuss your publication, website, and digital marketing goals.',
+    path: '/contact',
+  });
+
   return (
     <div className="pt-20">
       {/* Hero Section */}

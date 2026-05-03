@@ -4,8 +4,16 @@ import { Card } from '../../components/common/Card';
 import { publicistService } from '@/data/pricing';
 import { formatPrice } from '@/utils/helpers';
 import { Check } from 'lucide-react';
+import { useSEO } from '@/hooks/useSEO';
 
 export const PricingPage = () => {
+  useSEO({
+    title: 'Pricing',
+    description:
+      'View transparent pricing packages for publication, websites, and marketing services with optional publicist support.',
+    path: '/pricing',
+  });
+
   return (
     <div className="pt-20">
       {/* Hero Section */}
