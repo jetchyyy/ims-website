@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { ContactForm } from './ContactForm';
 import { ContactInfo } from './ContactInfo';
 
 export const Contact = () => {
@@ -24,7 +23,7 @@ export const Contact = () => {
         </motion.div>
 
         {/* Contact Grid */}
-        <div className="grid gap-12 lg:grid-cols-2">
+        <div className="grid gap-12">
           {/* Contact Info */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -33,16 +32,6 @@ export const Contact = () => {
             viewport={{ once: true }}
           >
             <ContactInfo />
-          </motion.div>
-
-          {/* Contact Form */}
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            <ContactForm />
           </motion.div>
         </div>
       </div>

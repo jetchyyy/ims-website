@@ -142,9 +142,15 @@ export const Footer = () => {
           <p className="mb-2">
             © {currentYear} {COMPANY_NAME}. All rights reserved.
           </p>
-          <p className="text-xs">
-            Created by <span className="text-primary-400 hover:text-primary-300">Odyssey</span>
-          </p>
+          <a
+            href="https://www.facebook.com/profile.php?id=61587269647950"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center text-xs font-medium text-primary-400 underline underline-offset-4 transition-colors hover:text-primary-300"
+            aria-label="Message Odyssey on Facebook"
+          >
+            Created by Odyssey. Want a website like this? Send us a message on Facebook.
+          </a>
         </div>
       </div>
     </footer>

@@ -18,7 +18,7 @@ export const Hero = () => {
           >
             <h1 className="mb-6 font-heading text-5xl font-bold leading-tight text-white lg:text-6xl">
               Transform Your Brand with{' '}
-              <span className="text-secondary-300">Professional Marketing</span>
+              <span className="text-accent-300">Professional Marketing</span>
             </h1>
             <p className="mb-8 text-xl text-primary-100">
               From publication to digital presence, we provide comprehensive marketing solutions
@@ -40,7 +40,7 @@ export const Hero = () => {
                   transition={{ duration: 0.5, delay: 0.2 + index * 0.1 }}
                   className="flex items-center space-x-3"
                 >
-                  <CheckCircle className="h-6 w-6 flex-shrink-0 text-secondary-400" />
+                  <CheckCircle className="h-6 w-6 flex-shrink-0 text-accent-400" />
                   <span className="text-primary-50">{feature}</span>
                 </motion.div>
               ))}
@@ -76,7 +76,7 @@ export const Hero = () => {
             <div className="relative h-full min-h-[500px]">
               {/* Decorative Elements */}
               <div className="absolute left-0 top-0 h-72 w-72 rounded-full bg-primary-200/30 blur-3xl" />
-              <div className="absolute bottom-0 right-0 h-72 w-72 rounded-full bg-secondary-200/30 blur-3xl" />
+              <div className="absolute bottom-0 right-0 h-72 w-72 rounded-full bg-accent-200/30 blur-3xl" />
 
               {/* Hero Image */}
               <div className="relative z-10 flex h-full items-center justify-center">

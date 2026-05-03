@@ -39,8 +39,6 @@ export const ContactForm = () => {
 
   return (
     <div className="rounded-xl bg-primary-700 p-8 shadow-lg">
-      <h3 className="mb-6 text-2xl font-bold text-white">Send us a message</h3>
-
       {isSubmitted && (
         <div className="mb-6 rounded-lg bg-green-500/20 p-4 text-green-100 border border-green-500/30">
           <p className="font-medium">Message sent successfully!</p>
